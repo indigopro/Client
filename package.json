@@ -1,20 +1,21 @@
 {
-  "name": "@indigopro/ui",
+  "name": "@indigopro/client",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "publish":"npm publish"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/indigopro/UI.git"
+    "url": "git+https://github.com/indigopro/Client.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/indigopro/UI/issues"
+    "url": "https://github.com/indigopro/Client/issues"
   },
-  "homepage": "https://github.com/indigopro/UI#readme"
+  "homepage": "https://github.com/indigopro/Client#readme"
 }
