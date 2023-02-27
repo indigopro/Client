@@ -1,6 +1,6 @@
 {
 	"name": "@indigopro/client",
-	"version": "1.0.6",
+	"version": "1.0.7",
 	"description": "",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
@@ -9,14 +9,15 @@
 		"dev": "vite dev",
 		"build": "vite build && npm run package",
 		"preview": "vite preview",
-		"package": "svelte-kit sync && svelte-package && publint",
+		"packageKit": "svelte-kit sync && svelte-package && publint",
 		"prepublishOnly": "npm run package",
 		"test": "playwright test",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --plugin-search-dir . --check . && eslint .",
 		"format": "prettier --plugin-search-dir . --write .",
-		"deploy": "svelte-kit sync && svelte-package && npx standard-version && npx tsc && npm publish"
+		"package": "svelte-package",
+		"deploy": "svelte-package && npx standard-version && npx tsc && npm publish"
 	},
 	"peerDependencies": {
 		"svelte": "^3.54.0"
