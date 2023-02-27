@@ -1,6 +1,6 @@
 {
 	"name": "@indigopro/client",
-	"version": "1.0.5",
+	"version": "1.0.6",
 	"description": "",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
@@ -16,7 +16,7 @@
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --plugin-search-dir . --check . && eslint .",
 		"format": "prettier --plugin-search-dir . --write .",
-		"deploy": "npx standard-version && npx tsc && npm publish"
+		"deploy": "svelte-kit sync && svelte-package && npx standard-version && npx tsc && npm publish"
 	},
 	"peerDependencies": {
 		"svelte": "^3.54.0"
